@@ -1,0 +1,2 @@
+target_group:
+  target_group_arn: arn:aws:elasticloadbalancing:us-east-1:997416683845:targetgroup/roboshop-dev-frontend/8dfb3e3d2a9b2502

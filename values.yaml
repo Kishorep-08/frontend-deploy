@@ -1,5 +1,5 @@
 deployment:
-  imageRepo: "kishore8856/frontend"
-  imageVersion: v2
+  imageRepo: "997416683845.dkr.ecr.us-east-1.amazonaws.com/roboshop/frontend"
+  imageVersion: "IMAGE_VERSION"
 service:
   servicePort: 80

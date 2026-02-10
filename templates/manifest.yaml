@@ -137,3 +137,17 @@ spec:
       port: {{ .Values.service.servicePort }}    # port on which service is exposed
       targetPort: 8080   # port on which frontend container is listening
 
+---
+
+apiVersion: elbv2.k8s.aws/v1beta1
+kind: TargetGroupBinding
+metadata:
+  name: frontend-tg
+  namespace: roboshop
+spec:
+  serviceRef:
+    name: frontend
+    port: 80
+  targetGroupARN: {{ .Values.target_group.target_group_arn }}
+  targetType: ip
+
